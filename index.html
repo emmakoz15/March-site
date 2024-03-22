@@ -32,27 +32,32 @@
 
         <!--phase 2-->
         <div class=" row text-center justify-content-center">
-            <div id= "nameInputBox" class="col-6 border m-3  d-100">
-                enter name here
+    
+            <!--this is an input  it allows user to put something in and we can collect value in js -->
+           <div class="col-6"> <input type="text" class="form-control col-6 border  d-100" id="nameInput">
             </div>
-            <div class=" col-4 btn border p-2 m-3"> press btn to enter name</div>
-        </div>
+
+
+            <button class=" col-4 btn btn-primary border "> press btn to enter name</div>
+            </button>
 
         <!--display list-->
         <div class=" row justify-content-center">
             <div id="listNameDisplay" class="col-5 m-3 text-center border d-100">
-                list of names
+                list of names <!--remove later-->
+                <ul id="nameList"></ul>
             </div>
             <!--display chosen name -->
-            <div id="selectedNameDisplay" class="col-5 m-3 text-center border d-100">
+            <div id="randomName" class="col-5 m-3 text-center border d-100">
                 namee
             </div>
+            
         </div>
         <!--btn to pick name-->
         <div class="row justify-content-center">
-        <div class="col-5 btn border m-3">
+        <button id="pickRandomBtn" class="col-5 btn border m-3">
             randomly select name
-        </div>
+        </button>
     </div>
 <!--end container-->
     </div>
