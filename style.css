@@ -1,0 +1,13 @@
+html,
+.container-fluid{
+    background-color: #a2d2ff;
+}
+  
+.ttl{
+    color: #ff0062;
+    font-family: "ohm-bold", sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+    text-decoration-line: underline;
+
+}
