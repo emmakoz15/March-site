@@ -37,4 +37,48 @@ function displayNames(){
     }
 
 }
+
+
+
+
+
 document.getElementById('addNameBtn').addEventListener('click', addName)
+// goes to btn by id - addnamebtn and adds an event listener of click  and runs addName function (for syntax dont add () after function) 
+
+// goes to btn by id - addnamebtn and adds an event listener of keypress when enter key is pressed it uses it as an event listener
+document.addEventListener('keypress', (event)=>{
+
+    // event.keyCode or event.which  property will have the code of the pressed key
+    let keyCode = event.key ? event.key : ''
+
+    // 13 points the enter key
+    if(event.key === 'Enter') {
+      // call click function of the buttonn 
+      addNameBtn.click();
+    }
+      
+  });
+
+
+function pickRandomName() {
+    const randomNameDiv = document.getElementById('randomName')
+    randomNameDiv.textContent = ''
+
+    // generates rndm name from namesArray and 
+    const randomNumber = Math.floor(Math.random() * namesArray.length)
+    const randomName = namesArray[randomNumber]
+
+    randomNameDiv.textContent = randomName
+//removes the random number
+    namesArray.splice(randomNumber, 1)
+
+
+    displayNames()
+
+
+}
+
+
+
+// event listener to select and display rndm name
+document.getElementById('pickRandomBtn').addEventListener('click', pickRandomName)
