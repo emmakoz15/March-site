@@ -51,7 +51,6 @@ document.addEventListener('keypress', (event)=>{
     // event.keyCode or event.which  property will have the code of the pressed key
     let keyCode = event.key ? event.key : ''
 
-    // 13 points the enter key
     if(event.key === 'Enter') {
       // call click function of the buttonn 
       addNameBtn.click();
@@ -74,6 +73,12 @@ function pickRandomName() {
 
 
     displayNames()
+    
+// adds confetti after clicking rndm btn
+    confetti({
+        particleCount: 300,
+        spread: 200
+      });
 
 
 }

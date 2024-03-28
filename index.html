@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Lucky Me Lottery</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -31,8 +31,8 @@
 
         <!--directions-->
         <div class="  text-center">
-            <p>Pariatur eu veniam excepteur ad non ex aliqua esse voluptate esse aute ut aliqua.</p>
-        </div>
+            <p class="instruc"> Random Name Generator</p>
+            <p class="instruc"> Step 1: Enter each name. Step 2: after list is created press "Generate Random Name". 
 
         <!--phase 2-->
         <div class=" row text-center justify-content-center">
@@ -46,21 +46,21 @@
             </button>
 
         <!--display list-->
-        <div class=" row justify-content-center">
-            <div id="listNameDisplay" class="col-5 m-3 text-center border d-100">
+        <div class=" row justify-content-center  text-center">
+            <div id="listNameDisplay" class="col-5 m-3 border d-100">
                 list of names <!--remove later-->
                 <ul id="nameList"></ul>
             </div>
             <!--display chosen name -->
-            <div id="randomName" class="col-5 m-3 text-center border d-100">
-                namee
+            <div id="randomName" class="col-5 m-3 row align-items-center justify-content-center border d-100">
+            
             </div>
             
         </div>
         <!--btn to pick name-->
         <div class="row justify-content-center">
         <button id="pickRandomBtn" class="col-5 btn border m-3">
-            randomly select name
+            Generate Random Name
         </button>
     </div>
 <!--end container-->
@@ -83,6 +83,6 @@
         ></script>
         <!--my js-->
         <script src="script.js"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     </body>
 </html>
